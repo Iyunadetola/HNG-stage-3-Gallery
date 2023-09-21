@@ -1,8 +1,30 @@
-# React + Vite
+# React Vite Gallery Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a gallery application built using React and Vite.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Clone the Repository](#clone-the-repository)
+- [Install Dependencies](#install-dependencies)
+- [Run the Application Locally](#run-the-application-locally)
+
+## Clone the Repository
+
+To get started with this project, clone this repository to your local machine using the following command:
+
+```bash
+git clone <repository_url>
+
+Install Dependencies
+Navigate to the project directory:
+cd image-gallery
+
+
+Install the project dependencies using npm:
+npm install
+
+Run the Application Locally
+Once the dependencies are installed, you can run the application locally using the following command:
+
+npm run dev
+

@@ -21,7 +21,7 @@ const SignIn = () => {
 
     return (
         <div className='signIn' >
-            <form action="">
+            <form action="" className='signInForm' >
                 <label htmlFor="Login">Login</label> <br /> <br />
                 <input type="email" placeholder='Email' onChange={(e) => { setLoginEmail(e.target.value) }} /> <br /> <br />
                 <input type='password' placeholder='Password' onChange={(e) => { setLoginPassword(e.target.value) }} /> <br />

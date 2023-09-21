@@ -5,9 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base:"/HNG-stage-3-Gallery/",
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ['react-loader-spinner'],
-    }
-  }
+  // build: {
+  //   rollupOptions: {
+  //     external: ['react-loader-spinner'],
+  //   }
+  // }
 })

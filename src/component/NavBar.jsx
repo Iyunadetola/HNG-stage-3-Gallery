@@ -15,9 +15,9 @@ const NavBar = () => {
   return (
     <div className='navDiv' >
         <Link className='home' to='/'>Home</Link> 
-        <form action="" onSubmit={onSubmit} >
+        <form action="" className='navForm' onSubmit={onSubmit} >
             <input type="text" onChange={(e)=>setInputChange(e.target.value)} />
-            <button type="submit">search</button>
+            <button className='navSubmit' type="submit">search</button>
         </form>
         <UserAuth/>
     </div>
