@@ -1,0 +1,121 @@
+/* .gallery{
+  -webkit-column-count: 3;
+   -moz-column-count: 3;
+    column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+  padding: 0 12px;
+}
+.gallery .picture{
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  cursor: pointer;
+}
+.gallery .picture:hover{
+  filter: opacity(0.6);
+}
+.modal{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+  transform: scale(0);
+  transition: opacity .4s ease, visibilty .4s ease, transform .5s ease-in-out;
+  overflow: hidden;
+
+}
+.modal .open{
+  visibility: visible;
+  opacity: 1;
+  transform:scale(1)
+}
+.modal img{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding:20px 0 20px;
+  max-height: 100%;
+  margin: 0 auto;
+}
+@media  only screen and (max-width:991px) {
+  .gallery{
+    -webkit-column-count: 2;
+   -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media  only screen and (max-width:480px) {
+  .gallery{
+    -webkit-column-count: 1;
+   -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+  -moz-column-width: 100%;
+  column-width: 100%;
+  }
+} */
+
+.gridImage{
+  width: 100%;
+
+}
+.gridContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+.gridH1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+.navDiv{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(209, 127, 26);
+  height: 3em;
+  align-items: center;
+  padding:0 2em 0 2em;
+
+}
+.navDiv .home{
+  text-decoration: none;
+  color: #fff;
+}
+.signIn{
+  text-align: center;
+  margin: 10em;
+  display: block;
+}
+form label{
+  font-weight: 700;
+}
+form input{
+  width: 20rem;
+  height: 1.5rem;
+  /* margin-top: 2em; */
+}
+form button{
+  width: 7rem;
+  margin-top: 2em;
+  
+}
+
+@media only screen and (max-width: 480px){
+  .gridContainer{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
