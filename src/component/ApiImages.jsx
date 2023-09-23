@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import NewImage from './NewImage'
-import { TailSpin } from 'react-loader-spinner'
+import NewImage from './NewImage' 
 import Loader from './Loader'
+import NavBar from './NavBar'
 
 
 const ApiImages = () => {
@@ -15,7 +15,8 @@ const ApiImages = () => {
             }
         }).then(response => response.json())
             .then(response => {
-                setFullImg(response.photos)
+                (setFullImg(response.photos.slice(0,12)))
+                console.log(fullImg, 'new')
                 setIsLoading(false)
             })
             .catch(error => {
@@ -27,7 +28,8 @@ const ApiImages = () => {
 
 
         <div>
-            {isLoading && <TailSpin />}
+            <NavBar/>
+            {isLoading && <Loader />}
             {fullImg && (
                 <NewImage fullImg={fullImg} setFullImg={setFullImg} />
             )}

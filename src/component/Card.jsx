@@ -14,7 +14,7 @@ const Card = ({item}) => {
         <div >
             <div className='gridItem' ref={setNodeRef} {...attributes} {...listeners} style={style} >
                 <img src={item.src.portrait} alt='' className='gridImage' />
-                <h4 className='gridH1' >{item.alt}</h4>
+                <p className='gridH1' >{item.alt}</p>
             </div>
         </div>
     )

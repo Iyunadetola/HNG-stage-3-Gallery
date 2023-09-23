@@ -40,14 +40,14 @@ const Input = () => {
     <div>
       <div>
         <label htmlFor="register-user">Register User</label>
-        <input type="email" placeholder='Email' onChange={(e) => { setRegisterEmail(e.target.value) }} />
-        <input type='password' placeholder='Password' onChange={(e) => { setRegisterPassword(e.target.value) }} />
+        <input type="email" placeholder='Email' required onChange={(e) => { setRegisterEmail(e.target.value) }} />
+        <input type='password' placeholder='Password' required onChange={(e) => { setRegisterPassword(e.target.value) }} />
         <button type="submit" onClick={register} >Create User</button>
       </div>
       <div>
         <label htmlFor="Login">Login</label>
-        <input type="email" placeholder='Email' onChange={(e) => { setLoginEmail(e.target.value) }} />
-        <input type='password' placeholder='Password' onChange={(e) => { setLoginPassword(e.target.value) }} />
+        <input type="email" placeholder='Email' required onChange={(e) => { setLoginEmail(e.target.value) }} />
+        <input type='password' placeholder='Password' required onChange={(e) => { setLoginPassword(e.target.value) }} />
         <button type="submit" onClick={login} >Login</button>
       </div>
       <div>

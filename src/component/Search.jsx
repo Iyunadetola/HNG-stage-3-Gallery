@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import NewImage from './NewImage'
 import Loader from './Loader'
-import { TailSpin } from 'react-loader-spinner'
+import NavBar from './NavBar'
 
 const Search = () => {
     const { title } = useParams()
@@ -27,8 +27,9 @@ const Search = () => {
 
     return (
         <div className='search' >
+            <NavBar/>
             <h3>{title}</h3>
-            {isLoading && <TailSpin/>}
+            {isLoading && <Loader/>}
             {fullImg && (
                 <NewImage fullImg={fullImg} setFullImg={setFullImg} />
             )}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { DndContext, closestCenter } from '@dnd-kit/core';
-import { SortableContext, arrayMove, rectSwappingStrategy } from '@dnd-kit/sortable';
+import { SortableContext, arrayMove, rectSortingStrategy } from '@dnd-kit/sortable';
 import Card from './Card';
 
 const NewImage = ({ fullImg, setFullImg }) => {
@@ -19,7 +19,7 @@ const NewImage = ({ fullImg, setFullImg }) => {
     }
     return (
         <DndContext collisionDetection={closestCenter} onDragEnd={onDragEnd} >
-            <SortableContext items={fullImg} strategy={rectSwappingStrategy}>
+            <SortableContext items={fullImg} strategy={rectSortingStrategy}>
 
                 <div className='gridContainer'>
                     {fullImg.map((item, index) => (

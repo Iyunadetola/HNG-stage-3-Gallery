@@ -5,23 +5,26 @@
 }
 .gridImage{
   width: 100%;
-
+  object-fit: cover;
+  aspect-ratio: 1/1;
 }
 .gridContainer{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
   padding: 1rem;
+  margin: 0 auto;
 }
-.gridH1{
+.grid p{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
 }
+
 .navDiv{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: rgb(209, 127, 26);
+  background-color: rgb(147, 143, 137);
   height: 3em;
   align-items: center;
   padding:0 0.5em 0 0.5em;
@@ -32,9 +35,48 @@
   color: #fff;
 }
 .signIn{
+  max-width: 400px;
+  width: 100%;
   text-align: center;
-  margin: 5rem auto;
-  display: block;
+  
+}
+.signIn label{
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.signIn input{
+  width: 100%;
+  padding: 8px;
+  margin-block: 4px;
+}
+.signIn button{
+  margin-top: 8px;
+  padding: 8px;
+  width: 100%;
+  background-color: rgb(223, 172, 17);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+
+}
+
+.signIn-container{
+  background-color: rgb(51, 39, 3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.signIn a{
+  text-decoration: none;
+  color: #fff;
+}
+.signIn p{
+  color: #fff;
 }
 
 form button{
@@ -47,17 +89,42 @@ form button{
   justify-content: center;
   align-items: center;
 }
+.navForm input{
+  padding: 4px;
+}
+.signOut{
+  padding: 4px 6px;
+  color: #fff;
+  background-color: rgb(67, 56, 42);
+  border: none;
+}
+
 .navSubmit{
   padding: 4px;
 }
+.loader{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 
 @media only screen and (max-width: 480px){
   .gridContainer{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    overflow: hidden;
   }
-  .navDiv{
-    width: 100%;
-  }
+ 
+}
+@media only screen and (max-width: 360px){
+  /* .navDiv{
+    height: 5em;
+    padding-left: 2rem;
+    overflow: hidden;
+  } */
+
+
 }
 
 

@@ -21,7 +21,7 @@ const UserAuth = () => {
             .catch(error => console.log(error))
     }
   return (
-    <button onClick={SignOut} >Sign Out</button>
+    <button className='signOut' onClick={SignOut} >Sign Out</button>
   )
 }
 
